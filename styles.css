@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+}
+.textContainer {
+    width: auto;
+    height: 3rem;
+    border-radius: 3rem;
+    margin: auto;
+    background-color: black;
+}
+.text {
+    line-height: 3rem;
+    text-align: center;
+    color: white;
+}
