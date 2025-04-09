@@ -1,6 +1,6 @@
 :root{
     --base-color: white;
-    --base-variant: lightgray;
+    --base-variant: lightslategray;
     --text-color: black;
     --secondary-text: darkslategray;
     --primary-color: blue;
@@ -11,7 +11,7 @@
     --base-color: black;
     --base-variant: darkslategray;
     --text-color: white;
-    --secondary-text: lightgray;
+    --secondary-text: lightslategray;
     --primary-color: green;
     --accent-color: lightgreen;
 }
@@ -25,6 +25,7 @@ body {
     display: inline-block;
     width: 5vw;
     height: 5vh;
+    background-color: var(--base-variant);
 }
 
 #themeSwitch {
@@ -32,7 +33,7 @@ body {
     height: 5vh;
     padding: 0vh;
     border-radius: 50%;
-    background-color: var(--base-varient);
+    background-color: var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;
