@@ -1,15 +1,72 @@
-body {
-    background-color: white;
+:root{
+    --base-color: white;
+    --base-variant: lightgray;
+    --text-color: black;
+    --secondary-text: darkslategray;
+    --primary-color: blue;
+    --accent-color: cornflowerblue;
 }
+
+.darkmode {
+    --base-color: black;
+    --base-variant: darkslategray;
+    --text-color: white;
+    --secondary-text: lightgray;
+    --primary-color: green;
+    --accent-color: lightgreen;
+}
+
+body {
+    background-color: var(--base-color);
+}
+
+#themeSwitchLabel {
+    position: relative;
+    display: inline-block;
+    width: 5vw;
+    height: 5vh;
+}
+
+#themeSwitch {
+    width: 5vw;
+    height: 5vh;
+    padding: 0vh;
+    border-radius: 50%;
+    background-color: var(--base-varient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 1vh;
+    right: 1vw;
+}
+
+#themeSwitch svg{
+    fill: var(--primary-color);
+}
+
+#themeSwitch svg:last-child{
+    display: none;
+}
+
+.darkmode #themeSwitch svg:first-child{
+    display: none;
+}
+
+.darkmode #themeSwitch svg:last-child{
+    display: block;
+}
+
 .textContainer {
     width: auto;
-    height: 3rem;
-    border-radius: 3rem;
+    height: 2vh;
+    border-radius: 100%;
     margin: auto;
-    background-color: white;
+    background-color: var(--base-color);
 }
+
 .text {
-    line-height: 3rem;
+    line-height: 2vh;
     text-align: center;
-    color: black;
+    color: var(--text-color);
 }
