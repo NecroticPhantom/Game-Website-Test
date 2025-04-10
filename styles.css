@@ -54,7 +54,7 @@ body {
     height: 1.5vw;
     width: 1.5vw;
     border-radius: 100%;
-    transform: translateX(calc(-100% - 0.03vw));
+    transform: translateX(-3.03vw);
     background-color: var(--primary-color);
     transition: transform 1s ease, var(--background-color-transition);
     cursor: pointer;
