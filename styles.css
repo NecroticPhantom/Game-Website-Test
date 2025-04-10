@@ -58,7 +58,7 @@ body {
 
 
 
-.flat-button {
+#themeSwitch {
     border: none;
     background: none;
     box-shadow: none;
@@ -69,7 +69,7 @@ body {
     appearance: none;
 }
   
-.flat-button:active, .flat-button:focus {
+#themeSwitch:active, #themeSwitch:focus {
     box-shadow: none;
     transform: none;
     outline: none;
