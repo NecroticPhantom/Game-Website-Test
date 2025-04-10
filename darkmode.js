@@ -1,19 +1,16 @@
 let darkmode = localStorage.getItem("darkmode")
 const themeSwitch = document.getElementById("themeSwitch")
-const themeSwitchInner = document.getElementById("themeSwitchInner")
 
 const enableDarkmode = () => {
     document.body.classList.add("darkmode")
     localStorage.setItem("darkmode", "active")
-    themeSwitchInner.style.justifyContent = "right";
-    themeSwitch.style.transform = "translateX(0.3vw)";
+    themeSwitch.style.transform = "translateX(calc(50% + 0.03vw))";
 }
 
 const disableDarkmode = () => {
     document.body.classList.remove("darkmode")
     localStorage.setItem("darkmode", null)
-    themeSwitchInner.style.justifyContent = "left";
-    themeSwitch.style.transform = "translateX(-0.3vw)";
+    themeSwitch.style.transform = "translateX(calc(-50% - 0.03vw))";
 }
 
 if (darkmode === "active") {

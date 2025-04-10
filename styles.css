@@ -5,8 +5,8 @@
     --secondary-text: darkslategray;
     --primary-color: blue;
     --accent-color: cornflowerblue;
-    --color-transition: color 0.5s ease;
-    --background-color-transition: background-color 0.5s ease;
+    --color-transition: color 1s ease;
+    --background-color-transition: background-color 1s ease;
 }
 
 .darkmode {
@@ -45,7 +45,7 @@ body {
     background-color: var(--accent-color);
     transition: var(--background-color-transition);
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 }
 
@@ -54,9 +54,9 @@ body {
     height: 1.5vw;
     width: 1.5vw;
     border-radius: 100%;
-    transform: translateX(-0.3vw);
+    transform: translateX(calc(-50% - 0.03vw));
     background-color: var(--primary-color);
-    transition: transform 0.5s ease, var(--background-color-transition);
+    transition: transform 1s ease, var(--background-color-transition);
     cursor: pointer;
     display: flex;
     justify-content: center;
