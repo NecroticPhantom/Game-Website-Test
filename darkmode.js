@@ -12,6 +12,7 @@ const enableDarkmode = () => {
 const disableDarkmode = () => {
     document.body.classList.remove("darkmode")
     localStorage.setItem("darkmode", null)
+    themeSwitchInner.style.justifyContent = "left";
     themeSwitch.style.transform = "translateX(-0.3vw)";
 }
 

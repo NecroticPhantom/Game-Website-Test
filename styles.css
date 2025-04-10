@@ -56,6 +56,27 @@ body {
     align-items: center;
 }
 
+
+
+.flat-button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+  
+.flat-button:active, .flat-button:focus {
+    box-shadow: none;
+    transform: none;
+    outline: none;
+}
+
+
+
 #themeSwitch svg{
     fill: var(--primary-color);
 }
