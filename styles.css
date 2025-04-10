@@ -51,31 +51,11 @@ body {
     border-radius: 100%;
     transform: translateX(-0.3vw);
     background-color: var(--primary-color);
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-
-#themeSwitch {
-    border: none;
-    background: none;
-    box-shadow: none;
-    outline: none;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-  
-#themeSwitch:active, #themeSwitch:focus {
-    box-shadow: none;
-    transform: none;
-    outline: none;
-}
-
-
 
 #themeSwitch svg{
     fill: var(--primary-color);
