@@ -22,27 +22,26 @@ body {
 
 #themeSwitchLabel {
     position: fixed;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 5vw;
     height: 5vw;
     border-radius: 50%;
     background-color: var(--base-variant);
     top: 2vw;
-    right: 2%;
+    right: 2vw;
 }
 
 #themeSwitch {
     width: 3vw;
     height: 3vw;
-    padding: 0vw;
     border-radius: 50%;
     background-color: var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 1vw;
-    right: 1vw;
 }
 
 #themeSwitch svg{
