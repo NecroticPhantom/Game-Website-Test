@@ -20,28 +20,40 @@ body {
     background-color: var(--base-color);
 }
 
-#themeSwitchLabel {
+#themeSwitchOuter {
     position: fixed;
+    width: 10vw;
+    height: 2vw;
+    border-radius: 100%;
+    background-color: var(--base-variant);
+    top: 1vw;
+    right: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 5vw;
-    height: 5vw;
-    border-radius: 50%;
-    background-color: var(--base-variant);
-    top: 2vw;
-    right: 2vw;
 }
 
-#themeSwitch {
-    width: 3vw;
-    height: 3vw;
-    border-radius: 50%;
+#themeSwitchInner {
+    position: relative;
+    width: 2.5vw;
+    height: 0.5vw;
+    border-radius: 100%;
     background-color: var(--accent-color);
     display: flex;
     justify-content: center;
+    align-items: left;
+}
+
+#themeSwitch {
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    left: 0.5;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    position: fixed;
 }
 
 #themeSwitch svg{
