@@ -21,24 +21,27 @@ body {
 }
 
 #themeSwitchLabel {
-    position: relative;
+    position: fixed;
     display: inline-block;
     width: 5vw;
-    height: 5vh;
+    height: 5vw;
+    border-radius: 50%;
     background-color: var(--base-variant);
+    top: 2vw;
+    right: 2%;
 }
 
 #themeSwitch {
-    width: 5vw;
-    height: 5vh;
-    padding: 0vh;
+    width: 3vw;
+    height: 3vw;
+    padding: 0vw;
     border-radius: 50%;
     background-color: var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 1vh;
+    top: 1vw;
     right: 1vw;
 }
 
@@ -60,14 +63,14 @@ body {
 
 .textContainer {
     width: auto;
-    height: 2vh;
+    height: 4vh;
     border-radius: 100%;
     margin: auto;
     background-color: var(--base-color);
 }
 
 .text {
-    line-height: 2vh;
+    line-height: 4vw;
     text-align: center;
     color: var(--text-color);
 }
