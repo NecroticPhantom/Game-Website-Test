@@ -31,8 +31,12 @@ body {
     position: fixed;
     height: 2vw;
     width: 6vw;
+    border-style: outset;
+    border-width: thin;
+    border-color: var(--base-variant);
     border-radius: 25%/75%;
     background-color: var(--base-variant);
+    box-shadow: 0.25vw 0.25vw 0.5vw 0.1vw black;
     transition: var(--background-color-transition);
     top: 0.5vw;
     right: 0.5vw;
@@ -41,16 +45,27 @@ body {
     align-items: center;
 }
 
+.darkmode #themeSwitchOuter {
+    border-color: color-mix(in srbg, var(--base-variant), white 10%);
+}
+
 #themeSwitchInner {
     position: relative;
     height: 1vw;
     width: 5vw;
+    border-style: inset;
+    border-width: medium;
+    border-color: color-mix(in srgb, var(--accent-color), white 10%);
     border-radius: 20%/100%;
     background-color: var(--accent-color);
     transition: var(--background-color-transition);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.darkmode #themeSwitchInner {
+    border-color: color-mix(in srbg, var(--accent-color), white 20%);
 }
 
 #themeSwitch {
@@ -68,7 +83,8 @@ body {
 }
 
 #themeSwitch img{
-    max-width: 200%;
+    position: absolute;
+    max-width: 100%;
     transition: opacity 1s ease, visibility 1s ease;
 }
 
