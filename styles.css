@@ -63,20 +63,20 @@ body {
     align-items: center;
 }
 
-#themeSwitch svg{
+#themeSwitch img{
     background-size: 100%;
     fill: var(--primary-color);
 }
 
-#themeSwitch svg:last-child{
+#themeSwitch img:last-child{
     display: none;
 }
 
-.darkmode #themeSwitch svg:first-child{
+.darkmode #themeSwitch img:first-child{
     display: none;
 }
 
-.darkmode #themeSwitch svg:last-child{
+.darkmode #themeSwitch img:last-child{
     display: block;
 }
 
