@@ -7,6 +7,8 @@
     --accent-color: cornflowerblue;
     --color-transition: color 1s ease;
     --background-color-transition: background-color 1s ease;
+    --hidden: 0;
+    --not-hidden: 1;
 }
 
 .darkmode {
@@ -16,6 +18,8 @@
     --secondary-text: lightslategray;
     --primary-color: green;
     --accent-color: lightgreen;
+    --hidden: 1;
+    --not-hidden: 0;
 }
 
 body {
@@ -60,23 +64,22 @@ body {
     cursor: pointer;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #themeSwitch img{
-    fill: var(--primary-color);
-    transition: display 1s ease;
+    max-width: 200%;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+#themeSwitch img:first-child{
+    opacity: var(--not-hidden);
+    visibility: var(--not-hidden);
 }
 
 #themeSwitch img:last-child{
-    display: none;
-}
-
-.darkmode #themeSwitch img:first-child{
-    display: none;
-}
-
-.darkmode #themeSwitch img:last-child{
-    display: block;
+    opacity: var(--hidden);
+    visibility: var(--hidden);
 }
 
 .textContainer {
