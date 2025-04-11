@@ -60,12 +60,11 @@ body {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 #themeSwitch img{
-    background-size: 100%;
     fill: var(--primary-color);
+    transition: display 1s ease;
 }
 
 #themeSwitch img:last-child{
