@@ -32,7 +32,7 @@ body {
     position: fixed;
     height: 2rem;
     width: 6rem;
-    border: thin outset color-mix(in srgb, var(--base-variant), white 10%);
+    border: thin inset color-mix(in srgb, var(--base-variant), white 10%);
     border-radius: 25% / 75%;
     background-color: var(--base-variant);
     box-shadow: 0.25rem 0.25rem 0.5rem 0.1rem black;
@@ -44,14 +44,13 @@ body {
   
 #themeSwitch {
     position: absolute;
-    top: 50%;
-    left: 0.2rem;
+    left: 0.1rem;
     height: 1.8rem;
     width: 1.8rem;
     border-radius: 50%;
-    transform: translateX(-2rem);
+    transform: translateY(-5%);
     background-color: var(--primary-color);
-    transition: transform 1s ease, var(--background-color-transition);
+    transition: left 1s ease, var(--background-color-transition);
     cursor: pointer;
     display: flex;
     justify-content: center;
