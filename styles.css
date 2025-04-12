@@ -32,43 +32,22 @@ body {
     position: fixed;
     height: 2rem;
     width: 6rem;
-    border: thin outset var(--base-variant);
+    border: thin outset color-mix(in srgb, var(--base-variant), white 10%);
     border-radius: 25% / 75%;
     background-color: var(--base-variant);
     box-shadow: 0.25rem 0.25rem 0.5rem 0.1rem black;
     transition: var(--background-color-transition);
-    top: 1rem;
-    right: 1rem;
+    top: 0.5em;
+    right: 0.5em;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-  
-.darkmode #themeSwitchOuter {
-    border-color: color-mix(in srgb, var(--base-variant), white 10%);
-}
-  
-#themeSwitchInner {
-    position: relative;
-    height: 1.5rem;
-    width: 5rem;
-    border: medium inset color-mix(in srgb, var(--accent-color), white 10%);
-    border-radius: 20% / 100%;
-    background-color: var(--accent-color);
-    transition: var(--background-color-transition);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.darkmode #themeSwitchInner {
-    border-color: color-mix(in srgb, var(--accent-color), white 20%);
 }
   
 #themeSwitch {
     position: relative;
-    height: 2rem;
-    width: 2rem;
+    height: 1.8rem;
+    width: 1.8rem;
     border-radius: 50%;
     transform: translateX(-2rem);
     background-color: var(--primary-color);
