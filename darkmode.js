@@ -3,7 +3,7 @@ const themeSwitch = document.getElementById("themeSwitch");
 const enableDarkmode = () => {
   document.body.classList.add("darkmode");
   localStorage.setItem("darkmode", "active");
-  themeSwitch.style.left = "3.9rem";
+  themeSwitch.style.left = "4.1rem";
 };
 
 const disableDarkmode = () => {
